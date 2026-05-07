@@ -66,6 +66,7 @@ export interface OCRResult {
   confidence: number
   mathExpressions: MathExpression[]
   language?: string
+  imageDataUrl?: string
 }
 
 export interface AnalysisError {

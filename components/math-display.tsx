@@ -2,7 +2,6 @@
 
 import { useEffect, useRef, memo } from 'react'
 import katex from 'katex'
-import 'katex/dist/katex.min.css'
 import { cn } from '@/lib/utils'
 import type { MathCorrection } from '@/lib/types'
 
