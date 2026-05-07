@@ -13,7 +13,7 @@ interface CheckRequest {
   additionalContext?: string
 }
 
-// Demo response generator - used when OPENAI_API_KEY is not configured
+// Demo response generator - used when OPENROUTER_API_KEY is not configured
 function generateDemoResponse(subject: string, taskType: string, topic: string, content: string): string {
   const wordCount = content.split(/\s+/).filter(Boolean).length
   const sentenceCount = content.split(/[.!?]+/).filter(Boolean).length
@@ -61,7 +61,7 @@ function generateDemoResponse(subject: string, taskType: string, topic: string, 
 
 **Оценка: ${scoreText}**
 
-*Это демонстрационный анализ. Для полноценной AI-проверки добавьте OPENAI_API_KEY в настройках проекта.*`
+*Это демонстрационный анализ. Для полноценной AI-проверки добавьте OPENROUTER_API_KEY в настройках проекта.*`
 }
 
 // Stream helper for demo mode
@@ -116,7 +116,7 @@ export async function POST(req: Request) {
     }
     
     // Check if OpenAI API key is configured
-    const hasOpenAI = !!process.env.OPENAI_API_KEY
+    const hasOpenAI = !!process.env.OPENROUTER_API_KEY
     
     if (!hasOpenAI) {
       // Demo mode - stream demo response
