@@ -18,23 +18,13 @@ export const metadata: Metadata = {
   description: 'Интеллектуальная система проверки домашних заданий на базе нейросетей. Проект конкурса "Моя страна — моя Россия"',
   keywords: ['AI', 'нейросети', 'образование', 'проверка заданий', 'преподаватели', 'Россия'],
   authors: [{ name: 'Команда ЭдуАссистент' }],
-  generator: 'v0.app',
   icons: {
     icon: [
-      {
-        url: '/icon-light-32x32.png',
-        media: '(prefers-color-scheme: light)',
-      },
-      {
-        url: '/icon-dark-32x32.png',
-        media: '(prefers-color-scheme: dark)',
-      },
       {
         url: '/icon.svg',
         type: 'image/svg+xml',
       },
     ],
-    apple: '/apple-icon.png',
   },
 }
 
